@@ -227,31 +227,13 @@ class _MaternalHealthFormScreenState extends State<MaternalHealthFormScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  'New Assessment',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: AppColors.textPrimary,
-                  ),
-                ),
-                ElevatedButton.icon(
-                  onPressed: _toggleVoiceInput,
-                  icon: Icon(_isListening ? Icons.stop : Icons.mic, size: 18),
-                  label: Text(_isListening ? 'Listening...' : 'Voice Fill'),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: _isListening ? Colors.red : const Color(0xFFE91E7B),
-                    foregroundColor: Colors.white,
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                ),
-              ],
+            const Text(
+              'New Assessment',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: AppColors.textPrimary,
+              ),
             ),
             const SizedBox(height: 24),
             Container(
